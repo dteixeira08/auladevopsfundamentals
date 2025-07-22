@@ -14,7 +14,7 @@ provider "azurerm" {
 }
 # Create Resource Group 
 resource "azurerm_resource_group" "rg" {
-  location = "westeurope"
+  location = "eastus"
   name     = "rg-auladevops-002"
   tags = merge(var.tags, {
     "workspace" = "${terraform.workspace}"
